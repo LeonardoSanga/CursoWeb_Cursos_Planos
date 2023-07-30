@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #0c1014;
+    color: white;
+}
+
+.divHeader {
+    background-color: #05080a;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.site-name { 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-wrapper-list {
+    display: flex;
+
+    list-style: none;
+}
+
+.nav-wrapper-list li{
+    padding: 10px;
+}
+
+.nav-wrapper-list a{
+    color: white; 
+    text-decoration: none;
+    padding: 14px;
+}
+
+a.nav-wrapper-list__active{
+    background-color: #cbe300;
+    border-radius: 5px;
+    color: #0c1014;
+    pointer-events: none;
+}
+
+.nav-wrapper-list a:hover{
+    text-decoration: underline;
+}
+
+.main-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+}
+
+.list {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+}
+
+.list-item {
+    flex: 1;
+    background-color: #1f262c;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 30px -6px black;
+}
+
+.list-item__name {
+    border-bottom: 2px solid #cbe300; 
+    text-transform: uppercase;
+}
+
+.list-item__name h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.list-item__list{
+    flex-grow: 1; 
+    color: #b5b5b5;
+    margin: 0 0 35px;
+    
+}
+
+.list-item__list ul{
+    padding-left: 30px;
+}
+
+.list-item__list li{
+    margin-bottom: 10px;
+}
+
+.list-item__list li::marker {
+    color: #cbe300;
+    
+  }
+
+  .destaque {
+    font-size: 30px;
+  }
+
+.list-item__link a {
+    display: block;
+    background-color: #cbe300;
+    padding: 10px 46px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .6);
+    color: #0c1014;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-item__link a:hover{
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+    color: white;
+}
